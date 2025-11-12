@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header */
+/* Header / Navigasi */
 header {
     background-color: #4b0082;
     color: white;
@@ -38,17 +38,29 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+    position: relative;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+    z-index: 0;
 }
 
 .hero-text {
-    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 30px;
     border-radius: 15px;
 }
@@ -68,13 +80,14 @@ nav a:hover {
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
     background-color: #e91e63;
 }
 
-/* Tentang */
+/* Tentang, Program, Galeri, Kontak */
 .about, .program, .galeri, .kontak {
     padding: 60px 80px;
     text-align: center;
