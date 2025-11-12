@@ -131,17 +131,29 @@ nav a:hover {
 
 .foto {
     text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .foto img {
-    width: 250px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
 .foto p {
     margin-top: 10px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #4b0082;
 }
 
 /* Kontak */
