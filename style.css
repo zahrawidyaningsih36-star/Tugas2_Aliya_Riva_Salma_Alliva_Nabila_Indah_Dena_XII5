@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4b0082;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #e91e63;
+}
+
+/* Tentang */
+.about, .program, .galeri, .kontak {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* Program */
+.program-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.program-box {
+    background-color: #f8f8ff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.program-box:hover {
+    transform: scale(1.05);
+}
+
+/* Galeri */
+.galeri-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.foto {
+    text-align: center;
+}
+
+.foto img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.foto p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Kontak */
+.kontak p {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
